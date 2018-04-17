@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+}
+
+#bg{
+  height: 100vh;
+  width: 100vw;
+  z-index: -100;
+  opacity: 1;
+}
+
+.views{
+  float: left;
+  z-index: 0;
+  opacity: 0.95;
+}
+
+#view1{
+  position:fixed;
+  top: -50px;
+  left:0px;
+  opacity: 0.85;
+  mix-blend-mode: darken;
+}
+
+#view2{
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  mix-blend-mode: darken;
+  opacity: 0.95;
+}
+
+.clear{
+  clear:both;
+}
+
+#food1{
+  display: none;
+}
+
+#c1{
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
