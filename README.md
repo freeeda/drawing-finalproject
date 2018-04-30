@@ -1,5 +1,5 @@
 # Drawing on the Web - Final project
--------------------------------------------
+
 
 Hello, there is Freda. Below are the progresses of my final project for Drawing on the Web.
 
@@ -12,10 +12,11 @@ Since I’m graduating this May, I want to  create three drawings that represent
 For each of these drawing, I will include one or more than one picture that I took when I was there as a background with different color modes blended. Then I want to create some SVG graphics or HTML Canvas to draw some local food or other memorable stuffs of the place, that I really enjoy and I will animate them with the background. For instance, I might let the food fall onto the screen with rotation and random sizes, or blend them with the background. The incorporation of background and food graphics represents my own perspective and memory of those cities and I want to share them to the class in this way.
 
 Final Project Submission:
+
 While making the project, I decided not to use SVG Graphics or HTML Canvas because it's hard to blend.
 
 I decided to mix a lot of photos I took and put them into different layers to create the animation effects.
 
 I also blended pictures of some memorable things into some of my drawings, but they are not food as I previously decided because I felt they were not very related to the overall theme.
 
-You can click [here](https://i6.cims.nyu.edu/~yl2587/drawing/FinalProject/) to see my project on i6. Thank you. 
+You can click [here](https://i6.cims.nyu.edu/~yl2587/drawing/FinalProject/) to see my project on i6. Thank you.
