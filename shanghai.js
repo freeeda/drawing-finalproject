@@ -1,3 +1,4 @@
+/*
 const canvas1 = document.getElementById('c1');
 const context1 = canvas1.getContext('2d');
 
@@ -22,30 +23,48 @@ function draw(){
   //set the initial position of soup dumpling at the center of the screen
   var xPos = 0.5 * canvas1.width;
   var yPos = 0.5 * canvas1.height;
-  var food1 = document.getElementById('food1');
-  var xSpeed = 2;
-  var ySpeed = 2;
+  var leaf = document.getElementById('leaf');
+  //var xSpeed = Math.random(2, 4);
+  //var ySpeed = Math.random(5, 8);
+  var ySpeed = Math.floor(Math.random()*6) + 3;
 
 
   moveFood();
 
   function moveFood(){
     context1.clearRect(0,0,referenceWidth, referenceHeight);
-    context1.drawImage(food1, xPos, yPos);
+    context1.drawImage(leaf, xPos, yPos);
+
+    var imageData = context1.getImageData(0,0, canvas1.width, canvas1.height);
+    var data = imageData.data;
+
+    for (var i = 0; i< data.length; i+= 4){
+      data[i+3] = 150; //randomly change the opacity of image
+
+    }
+    context1.putImageData(imageData, 0, 0);
+
     yPos += ySpeed;
-    xPos += xSpeed;
 
     if (xPos > referenceWidth || xPos < 0){
-      xSpeed *= -1;
+      ySpeed = Math.floor(Math.random()*6) + 3;
+
+      xPos = Math.random()*canvas1.width;
+      yPos = 0;
     }
 
-    if (yPos > referenceHeight || yPos < 0){
-      ySpeed *= -1;
+    else if (yPos > referenceHeight || yPos < 0){
+      ySpeed = Math.floor(Math.random()*6) + 3;
+
+      xPos = Math.random()*canvas1.width;
+      yPos = 0;
     }
 
     requestAnimationFrame(moveFood);
   }
 
+
 }
 
 window.addEventListener('load', setup);
+*/

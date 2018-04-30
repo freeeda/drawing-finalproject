@@ -1,47 +1,71 @@
-body {
+body{
   margin: 0px;
 }
 
-#bg{
-  height: 100vh;
-  width: 100vw;
-  z-index: -100;
-  opacity: 1;
+#container{
+  margin: auto;
 }
 
-.views{
-  float: left;
-  z-index: 0;
-  opacity: 0.95;
-}
-
-#view1{
-  position:fixed;
-  top: -50px;
-  left:0px;
-  opacity: 0.85;
-  mix-blend-mode: darken;
-}
-
-#view2{
+#map{
   position: fixed;
-  top: -100px;
-  left: 50%;
-  mix-blend-mode: darken;
-  opacity: 0.95;
+  top: -30px;
+  left: 60px;
 }
 
-.clear{
-  clear:both;
+#tower{
+  position: fixed;
+  top: 80px;
+  left: 945px;
 }
 
-#food1{
-  display: none;
+#telephone{
+  position: fixed;
+  top: 60px;
+  left: 520px;
 }
 
-#c1{
-  position:fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 100;
+#church{
+  position: fixed;
+  top: 40px;
+  left: 600px;
+}
+
+.landmark{
+  transform: scale(0.45);
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+
+.landmark:hover{
+  transform: scale(0.6);
+}
+
+.skyline{
+  width: 60%;
+  z-index: -25;
+  opacity: 0.6;
+  transition-property: opacity;
+  transition-duration: 1s;
+
+}
+
+#shanghai{
+  position: fixed;
+  bottom: -10px;
+  left: -30px;
+
+}
+
+#london{
+  position: fixed;
+  bottom: 0px;
+  right: -55px;
+
+}
+
+#helsinki{
+  position: fixed;
+  bottom: 0px;
+  left: 300px;
+
 }

@@ -1,0 +1,92 @@
+@keyframes changeOpa1{
+  0% {
+    opacity: 0.3;
+  }
+
+  33%{
+    opacity: 0.6;
+  }
+
+  66%{
+    opacity: 0.9;
+  }
+
+  100%{
+    opacity: 0.5;
+  }
+}
+
+@keyframes changeOpa2{
+  0% {
+    opacity: 0.9;
+  }
+
+  33%{
+    opacity: 0.7;
+  }
+
+  66%{
+    opacity: 0.85;
+  }
+
+  100%{
+    opacity: 0.5;
+  }
+}
+body {
+  margin: 0px;
+}
+
+#bg{
+  height: 100vh;
+  width: 100vw;
+  z-index: -50;
+  opacity: 0.6;
+  mix-blend-mode: color-dodge;
+
+}
+
+.views{
+  float: left;
+  z-index: 50;
+}
+
+#view1{
+  position:fixed;
+  top: -50px;
+  left:0px;
+  mix-blend-mode: hard-light;
+  animation-name: changeOpa1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+#view2{
+  position: fixed;
+  top: -70px;
+  left: 49.5%;
+  mix-blend-mode: darken;
+  animation-name: changeOpa2;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+.clear{
+  clear:both;
+}
+
+video{
+  position:fixed;
+  top:0px;
+  left:0px;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -55;
+  opacity: 0.95;
+
+
+}
